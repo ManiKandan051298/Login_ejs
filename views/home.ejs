@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="/css/home.css">
+<div class="sidebar">
+
+    <p class="logo mx-5 mt-5 ">
+
+        <% if(typeof username!="undefined"){ %>
+            <%= username %>
+                <% } %>
+                    <% if(typeof username=="undefined"){ %>
+                        <a name="" id="" class="btn btn-primary" href="/login" role="button">Login</a>
+                        <% } %>
+    </p>
+    <a href="#home"> <i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="#home">Recepitonist</a>
+    <a href="#home">Schedule Visit</a>
+    <a href="#home">Visitors History</a>
+    <a href="#home">Visitors Master</a>
+    <a href="#home">Add on Master</a>
+    <a href="#home">Employee</a>
+    <a href="#home">Administration</a>
+</div>
+
+<div class="content ">
+    <div class=" container row d-flex justify-content-between border-bottom">
+        <div class=" col mt-3 ml-3 ">
+            <p style="color:red; font-weight: 400;">ROLES <span style="color:black">CONFIGURATION</span></p>
+
+        </div>
+        <div class="col text-right mt-3 mr-3">
+            <a name="" id="" class="btn btn-light" href="#" role="button">Refresh</a>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Roles</th>
+                            <th scope="col">Add</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr colspan=2> Actions</tr>
+                        <tr>
+
+                            <td>Host</td>
+                            <td>(Default)</td>
+                        </tr>
+                        <tr>
+                            <td>Receptionist</td>
+                            <td>(Default)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-4 text-center">
+                Schedule Visitio
+            </div>
+            <div class="col-4 text-center">
+                Employees
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+
+        </div>
+    </div>
+
+</div>
